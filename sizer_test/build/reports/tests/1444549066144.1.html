@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" class="ui-window"><head>
+    <meta charset="utf-8" />
+    <title>AstraFit Sizer</title>
+    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+    <link media="screen" href="/vendor/bootstrap/dist/css/bootstrap.min.css?rel=1430229545183" rel="stylesheet" />
+    <link media="screen" href="/build/assets/css/astrafit.css?rel=1443696684555" rel="stylesheet" />
+    <link media="screen" href="/build/assets/css/sizer.css?rel=1443696684555" rel="stylesheet" />
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/build/sizer/v1/scripts/init.js?rel=1443696684555" src="/build/sizer/v1/scripts/init.js?rel=1443696684555"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="infrastructure" src="/build/sizer/v1/scripts/infrastructure.js"></script></head>
+<body>
+    <div class="general-container ui-rounded"><div class="main-container ui-sizer container ui-grow on"><div class="ui-on-no-cookie alert alert-warning text-center">Для оптимального пользования сервисом AstraFit активируйте в настройках браузера режим сохранения файлов cookie.</div>
+<div id="af-sizer" class="row af-sizer">
+    <div role="navigation" class="navbar navbar-default navbar-static-top">
+        <div class="container">
+
+            <ul class="nav navbar-nav">
+
+                <li class="logo">
+                    <a class="goto-astrafit" target="_blank" href="http://astrafit.com">Astrafit</a>
+                </li>
+
+                <li class="chooseMenu active"><a href="javascript:;">Подбор по фигуре</a></li>
+                <li class="tableMenu"><a href="javascript:;">Замеры изделия</a></li>
+
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;" aria-expanded="false">
+                        <i class="user-status user-exist"></i>
+                        <span class="name">Мой профиль</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul role="menu" class="dropdown-menu"><li class="settings"><div class="field section">
+    <div class="sub-items pull-right">
+        <div class="btn btn-link changeParams">Изменить мои параметры</div>
+    </div>
+    <div class="language pull-left">
+        <a data-lang="ru_ru" class="active" href="javascript:;">ru</a>
+        <a data-lang="en_en" class="" href="javascript:;">en</a>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="field">
+    <div class="ui-ellipsis">emailForTest@astrafit.com</div>
+</div>
+
+<div class="field field-buttons">
+    <div class="btn-toolbar">
+        <div class="btn btn-success exit text-uppercase">Выйти</div>
+    </div>
+</div>
+</li></ul>
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="main-close close-window" style="display: none;"><span class="ui-closable ui-fx-rotate">×</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="foto-small" class="foto-small"></div>
+
+    <div class="main-body"><div class="choose af-gender-1"><div class="content">
+
+    <div class="choose-view">
+        <div class="unit-metrics text-center">
+            <!-- insert metric's switch here -->
+        </div>
+
+        <div class="details">
+            <div class="title-button-pic">
+
+                <div class="ui-help showTip">
+                    <a class="btn btn-img" href="javascript:;">
+                        <span class="ttl"><img width="10" height="18" src="/frontend/assets/img/af-question.svg" /></span>
+                        <span class="close"><img width="10" height="18" src="/frontend/assets/img/af-question.svg" /></span>
+                    </a>
+                    <div class="title title-right">Обхват талии в самом узком месте. Лента параллельно полу </div>
+                </div>
+
+                <div class="ui-video showTip">
+                    <a class="btn btn-img" href="javascript:;">
+                        <span class="ttl showVideo"><img width="20" height="18" src="/frontend/assets/img/af-cam.svg" /></span>
+                        <span class="close showPic" style="display: none;"><img width="14" height="14" src="/frontend/assets/img/af-close.svg" /></span>
+                    </a>
+                </div>
+
+                <div class="pic active" style="background-image: url(&quot;/frontend/assets/img/waist.jpg&quot;);"></div>
+                <div class="video" style="display: none;"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="form paramsConatiner"><div><div class="row row-main">
+
+    <div class="params"><div class="field-container"><div title="Грудь" class="title">Грудь</div>
+<div class="field">
+    <div class="input">
+        <input type="number" data-id="1" required="1" step="1" max="140" min="70" value="86" maxlength="3" pattern="[0-9]{1,3}" />
+    </div>
+    <div class="unit">см</div>
+</div>
+<div class="ui-error-msg">
+    от 70 до 140
+</div></div><div class="field-container active"><div title="Талия" class="title">Талия</div>
+<div class="field">
+    <div class="input">
+        <input type="number" data-id="2" required="1" step="1" max="130" min="50" value="66" maxlength="3" pattern="[0-9]{1,3}" />
+    </div>
+    <div class="unit">см</div>
+</div>
+<div class="ui-error-msg">
+    от 50 до 130
+</div></div><div class="field-container"><div title="Бедра" class="title">Бедра</div>
+<div class="field">
+    <div class="input">
+        <input type="number" data-id="3" required="1" step="1" max="150" min="76" value="94" maxlength="3" pattern="[0-9]{1,3}" />
+    </div>
+    <div class="unit">см</div>
+</div>
+<div class="ui-error-msg">
+    от 76 до 150
+</div></div><div class="field-container"><div title="Обхват руки" class="title">Обхват руки</div>
+<div class="field">
+    <div class="input">
+        <input type="number" data-id="4" required="1" step="1" max="40" min="18" value="24" maxlength="3" pattern="[0-9]{1,3}" />
+    </div>
+    <div class="unit">см</div>
+</div>
+<div class="ui-error-msg">
+    от 18 до 40
+</div></div><div class="field-container"><div title="Рост" class="title">Рост</div>
+<div class="field">
+    <div class="input">
+        <input type="number" data-id="5" required="1" step="1" max="200" min="150" value="171" maxlength="3" pattern="[0-9]{1,3}" />
+    </div>
+    <div class="unit">см</div>
+</div>
+<div class="ui-error-msg">
+    от 150 до 200
+</div></div></div>
+
+    <div class="col-xs-12 save">
+
+        <p>Мы измерили все изделия <b>вручную</b> и поэтому для нас так важно знать вашу фигуру. <br />В результате вы сможете на <b>99%</b> быть уверены в вашем размере.</p>
+
+        <div class="btn-toolbar">
+
+            <button class="btn btn-success btn-lg next">
+                Готово<!-- <i class="icon-arrowRightVpered"></i> -->
+            </button>
+
+            <div class="back">
+                <a href="javascript:;" class="btn btn-link btn-lg">изменить параметры</a>
+            </div>
+
+        </div>
+
+    </div>
+</div> </div></div>
+
+    <div class="register">
+
+        <div class="title">Сохранить мои данные</div>
+
+        <div class="row row-main">
+
+            <div class="col-sm-4 col-xs-12">
+                <a href="javascript:;" class="btn btn-link btn-block btn-lg registerAllready">уже регистрировались</a>
+            </div>
+
+            <div class="col-sm-8 col-xs-12">
+                <div class="form-group">
+                    <input type="email" required="1" autocomplete="on" placeholder="укажите email" class="form-control input-lg email" />
+                    <small data-val="Адрес электронной почты указан с ошибками" class="ui-hint help-block"></small>
+                </div>
+
+                <p class="iAgree small">
+                    Продолжая я принимаю
+                    <a href="javascript:;" class="userAgreement">пользовательское соглашение</a>
+                </p>
+
+            </div>
+
+            <div class="clearfix"> </div>
+
+            <div class="col-xs-12">
+                <div class="btn-toolbar">
+                    <div class="btn btn-success btn-lg submit">Сохранить</div>
+                    <div class="btn btn-link btn-lg continue"><a href="javascript:;">продолжить без регистрации</a></div>
+                </div>
+            </div>
+
+            <div style="display:none" class="loader"><i class="spinner-icon spinner-icon-default"></i></div>
+
+        </div>
+
+        <p> </p>
+
+    </div>
+
+
+    <div class="agreement rus">
+        <h2><span>Пользовательское соглашение</span> <br />о предоставлении доступа к программному обеспечению</h2>
+
+        <h3>Термины и определения</h3>
+
+        <b>Продукт</b> - комплекс инновационных сервисов для магазинов одежды, досок объявлений (как on-line так и
+        off-line) - «AstraFit» направленных на решение проблемы подбора правильного размера одежды человеком.
+
+        <p>
+            <b>Сервис</b> - реализованное с помощью веб-интерфейса средство для оказания Услуг, включая, но не
+            ограничиваясь такими: интерфейс для измерения и вывода параметров одежды «AstraFit Assistant», программа по
+            подбору размера одежды «AstraFit Sizer», способ фильтрации одежды по подходящему размеру «AstraFit Filter»,
+            программа по составлению индивидуализированных электронных сообщений «AstraFit Mail» и т.д.
+        </p>
+
+        <p>
+            <b>Сайт</b> - официальный веб-сайт сервисов «AstraFit», размещенный по адресу www.astrafit.com, который,
+            помимо прочего: содержит информацию об Услугах; содержит тарифы и стоимость Услуг;
+            <br />служит официальным средством уведомления Пользователя об изменениях и дополнениях Сервиса путем
+            размещения на Сайте соответствующей информации в случаях, предусмотренных настоящим Соглашением.</p>
+
+        <p><b>Услуги</b> - услуги по предоставлению Пользователю приведенных выше сервисов, но не ограничиваясь ими, а
+            так
+            же управление и координация оказываемых Услуг, в том числе, но, не ограничиваясь, путем обеспечения
+            управления
+            Аккаунтом Пользователя.</p>
+
+        <p><b>Аккаунт Пользователя (Аккаунт)</b> - учетная запись, структура конкретных данных, информации, совокупно
+            относящихся к единому элементу Сервиса и индивидуализируемая учетными данными, предоставленными AstraFit
+            Пользователю при регистрации на Сервисе.</p>
+
+
+        <h3>1. Общие положения</h3>
+
+        <p>1.1. Настоящее Соглашение (далее «Соглашение») является договорным соглашением между физическим лицом
+            Добрыниным Никитой Игоревичем, гражданином Украины (далее «Разработчик», «Сторона 1») и Пользователем
+            («Сторона 2») о предоставлении программного обеспечения, изготовленного Разработчиком (далее- «Продукт»,
+            «ПО»).</p>
+
+        <p>Настоящее Соглашение заключается безусловным принятием его условий Пользователем. Соглашение вступает в силу
+            с
+            момента подтверждения Пользователем согласия с его условиями путем ввода логин и пароля при входе в свой
+            персональный Аккаунт в сервисах «AstraFit».</p>
+
+        <h3>2. Предмет Соглашения</h3>
+        <p>2.1. Разработчик предоставляет Пользователю доступ к сервисам «AstraFit». Разработчик вправе изменять спектр
+            сервисом по своему усмотрению путем добавления новых/дополнение существующих/отключения сервисов по своему
+            усмотрению и/или необходимости. Все существующие на данный момент сервисы, а также любое развитие их и/или
+            добавление новых, является предметом настоящего Соглашения.</p>
+
+        <p>2.2. В случае несогласия Пользователя с какими-либо из положений Соглашения, Пользователь не в праве
+            использовать сервисы «AstraFit». В случае, если были внесены какие-либо изменения в Соглашение, с которыми
+            Пользователь не согласен, он обязан прекратить использование сервисов «AstraFit». Начиная использовать
+            какой-либо сервис/его отдельные функции, либо пройдя процедуру регистрации, Пользователь считается принявшим
+            условия Соглашения в полном объеме, без всяких оговорок и исключений. </p>
+
+        <p>2.3. Разработчик оставляет за собой право полностью или частично ограничивать функциональность сервисов по
+            техническим, технологическим, профилактическим или иным причинам по своему собственному усмотрению.</p>
+
+        <p>2.4. Разработчик предоставляет Пользователю Услуги в соответствии с условиями настоящего Соглашения по
+            принципу
+            «как есть» («as is»). Пользователь несёт риск соответствия Сервиса своим пожеланиям и
+            потребностям.</p>
+
+
+        <h3>3. Регистрация Пользователя. Учетная запись Пользователя. Доступ к Продукту
+            Пользователем</h3>
+        <p>3.1. Для того чтобы воспользоваться некоторыми сервисами «AstraFit» или некоторыми отдельными функциями
+            сервисов, Пользователю необходимо пройти процедуру регистрации, в результате которой для Пользователя будет
+            создана уникальная учетная запись.</p>
+
+        <p>3.2. <i><b>Логин и пароль для доступа к учетной записи Пользователя.</b></i> При регистрации Пользователь
+            самостоятельно создает логин и пароль к своему персональному Аккаунту в сервисах «AstraFit». «AstraFit»
+            вправе
+            запретить использование определенных логинов, а также устанавливать требования к логину и паролю (длина,
+            допустимые символы и т.д.).</p>
+
+        <p>3.3. Пользователь самостоятельно несет ответственность за безопасность (устойчивость к угадыванию) выбранного
+            им пароля, а также самостоятельно обеспечивает конфиденциальность своего пароля. Пользователь самостоятельно
+            несет ответственность за все действия (а также их последствия) в рамках использования сервисов «AstraFit»
+            под
+            учетной записью Пользователя. Все действия в рамках или с использованием сервисов «AstraFit» под учетной
+            записью Пользователя считаются произведенными самим Пользователем, за исключением случаев, когда
+            Пользователь
+            уведомил Разработчика о несанкционированном доступе к сервисам «AstraFit» с использованием учетной записи
+            Пользователя и/или о любом нарушении (подозрениях о нарушении) конфиденциальности своего пароля.</p>
+
+        <p>3.4. Пользователь обязан немедленно уведомить Разработчика о любом случае несанкционированного (не
+            разрешенного
+            Пользователем) доступа к сервисам «AstraFit» с использованием учетной записи Пользователя и/или о любом
+            нарушении (подозрениях о нарушении) конфиденциальности своего пароля. В целях безопасности, Пользователь
+            обязан самостоятельно осуществлять безопасное завершение работы под своей учетной записью (кнопка «Выход»)
+            по
+            окончании каждой сессии работы с сервисами «AstraFit». Разработчик не отвечает за возможную потерю или порчу
+            данных, а также другие последствия любого характера, которые могут произойти из-за нарушения Пользователем
+            положений этой части Соглашения.</p>
+
+        <p><i><b>3.5. Использование Пользователем своей учетной записи.</b></i> Пользователь не в праве воспроизводить,
+            повторять и копировать, продавать и перепродавать, а также использовать для каких-либо коммерческих целей
+            какие-либо части сервисов «AstraFit» (включая контент, доступный Пользователю посредством сервисов), или
+            доступ к ним, кроме тех случаев, когда Пользователь получил такое разрешение от Разработчика либо когда это
+            прямо предусмотрено пользовательским соглашением какого-либо сервиса.</p>
+
+        <p><i><b>3.6. Прекращение регистрации.</b></i> Разработчик вправе заблокировать или удалить учетную запись
+            Пользователя, а также запретить доступ с использованием какой-либо учетной записи к определенным сервисам
+            «AstraFit», и удалить любой контент без объяснения причин, в том числе в случае нарушения Пользователем
+            условий Соглашения, а также в случае неиспользования соответствующего сервиса, в частности удаление учётной
+            записи Пользователя.</p>
+
+        <h3>4. Исключительные права на содержание сервисов и контент</h3>
+        <p>4.1. Все объекты, доступные при помощи сервисов «AstraFit», в том числе элементы дизайна, текст, графические
+            изображения, иллюстрации, видео, программы для ЭВМ, базы данных, музыка, звуки и другие объекты (далее –
+            содержание сервисов), а также любой контент, размещенный на сервисах «AstraFit», являются объектами
+            исключительных прав Разработчика.</p>
+
+        <p>4.2. Использование контента, а также каких-либо иных элементов сервисов, возможно только в рамках
+            функционала,
+            предлагаемого тем или иным сервисом. Никакие элементы содержания сервисов «AstraFit», а также любой контент,
+            размещенный на сервисах «AstraFit», не могут быть использованы иным образом без предварительного разрешения
+            правообладателя. </p>
+
+        <p>4.3. Пользователь не вправе выполнять следующих действий при использовании Сервиса:<br />
+            - копировать Продукт или какую-либо его часть;<br />
+            - изменять Продукт или какую-либо его часть;<br />
+            - декомпилировать («decompile») или иным образом преобразовывать Продукт в исходный код или какую-либо его
+            часть;<br />
+            - раскрывать иным способом какой-либо исходный код Продукта;<br />
+            - видоизменять Продукт каким-либо образом или в какой-либо форме;<br />
+            - использовать несанкционированные видоизмененные версии Продукта, включая (без ограничения) в целях
+            создания
+            подобных продуктов и/или конкурентного сервиса или с целью получения несанкционированного доступа к
+            Сервису;<br />
+            - модифицировать Продукт каким-либо образом. Под модификацией (переработкой) понимается любое изменение
+            Продукта, в том числе перевод Продукта с одного языка на другой язык;<br />
+            - фальсифицировать свой IP-адрес, а также адреса, используемые в других сетевых протоколах, при передаче
+            данных;<br />
+            - осуществлять действия, направленные на нарушение нормального функционирования Продукта и/или Сервиса;<br />
+            - осуществлять действия, направленные на получение доступа к данным других пользователей Сервиса;<br />
+            - оказывать услуги по предоставлению доступа к Сервису третьим лицам, а также не вправе передавать
+            (уступать)
+            получаемые от Разработчика Услуги. Любая передача (уступка) Пользователем другому лицу может быть
+            осуществлена
+            только с письменного согласия Разработчика;<br />
+            - передавать логины и пароли учетных записей третьим лицам;<br />
+            - перепродавать, давать разрешения на использование, сдавать в аренду, продавать, предоставлять в лизинг,
+            передавать, передавать права, распространять, обеспечивать хостинг, раскрывать или делать Сервис доступной
+            каким-либо третьим лицам, включая, но не ограничиваясь созданием интернет-ссылок на сайт размещения Сервиса,
+            которые включают информацию подключения Пользователя к Сервису, включая но не ограничиваясь, именами
+            пользователей, паролями, куки («cookie»), и/или «зеркалированием» («mirroring») или «обрамлением»
+            («wrapping»)
+            какой-либо части Сервиса;<br />
+            Пользователь гарантирует, что ни Пользователь, ни кто-либо, действующий от имени Пользователя, не будут
+            использовать Сервис в целях подстрекательства к использованию конкурентных программ и сервисов.
+        </p>
+
+        <h3>5. Качество предоставления услуг и границы ответственности</h3>
+        <p>5.1. Разработчик не несет ответственности за сбои, находящиеся за пределами разумного контроля:</p>
+        - отказами программного обеспечения и коммуникационного оборудования, являющегося собственностью или арендуемого
+        Пользователем, включая кэширование в абонентском программном обеспечении при доступе по протоколу HTTP и
+        задержки
+        распространения DNS информации, которые могут вызвать временную недоступность услуги;<br />
+        - направленными DDOS атаками и другими подобными воздействиями на сеть Исполнителя.<p></p>
+
+        <p>5.2. Разработчик имеет право обновлять содержание, функциональные возможности Продукта и Сервиса, а также их
+            пользовательский интерфейс в любое время по своему собственному усмотрению. Разработчик не несет перед
+            Пользователем ответственности за модификацию Сервиса. Разработчик имеет право сообщать Пользователю о
+            некоторых из произведенных модификаций посредством публикации объявления на сайте www.astrafit.com и/или
+            посредством электронной почты на адрес Пользователя, указанный при регистрации Аккаунта на Сервисе.</p>
+
+        <p>5.3. Разработчик может проводить технологические перерывы при оказании Услуг, которые рассматриваются как
+            оказание Услуг в штатном режиме и не являются основанием для перерасчета оплаченных Пользователем сумм.
+            Технологические перерывы могут проводиться в том числе для обновления функциональности Продукта и Сервиса.
+            Технологические перерывы не могут превышать 8 (Восемь) часов за один календарный месяц и проводятся в ночное
+            время (с 00:00 до 06:00 по киевскому времени). </p>
+
+        <p>5.4. Разработчик гарантирует предоставление Пользователю базовой технической поддержки в отношении
+            использования Сервиса в течение всего срока оказания Услуг. Под базовой технической поддержкой понимается
+            предоставляемая специалистами Разработчика по выделенной линии службы приема и разрешения технических
+            запросов
+            (e-mail: support@astrafit.com) консультационная помощь, включающая в себя предоставление информации о
+            функциональных возможностях Сервиса и способах их использования, консультирование по настройке сервисов.</p>
+
+        <p>5.5. Разработчик вправе в одностороннем порядке по своему усмотрению изменять, модифицировать Продукт и/или
+            условия использования Сервиса, изложенные в настоящем Соглашении. </p>
+
+        <h3>6. Ответственность сторон. Ограничение ответственности</h3>
+        <p>6.1. Разработчик не несет ответственности за любые виды убытков, произошедшие вследствие использования
+            Пользователем сервисов «AstraFit» или отдельных частей/функций сервисов;</p>
+
+        <p>6.2. При любых обстоятельствах ответственность Разработчика в соответствии со статьей 22 Гражданского кодекса
+            Украины ограничена 2000,00 (двумя тысячами) грн. и возлагается на него при наличии в его действиях вины.</p>
+
+        <p>6.3. Пользователь несет полную материальную ответственность за нарушение условий данного Соглашения в
+            соответствии с действующим законодательством Украины, в т.ч. за разглашение конфиденциальной информации о
+            Продукте, неправомерное использование Продукта, нарушение авторских прав Разработчика.</p>
+
+        <h3>7. Конфиденциальность информации</h3>
+        <p>7.1. Стороны в течение всего срока действия данного Соглашения, а также в течение двух лет по окончании его
+            действия, обязуются обеспечить конфиденциальность любой информации и данных, получаемых друг от друга в
+            связи
+            с исполнением своих обязательств (в том числе персональных данных), за исключением информации и данных,
+            являющихся общедоступными (далее- конфиденциальная информация). Каждая из Сторон обязуется не разглашать
+            конфиденциальную информацию третьим лицам без получения предварительного письменного согласия Стороны,
+            являющейся владельцем конфиденциальной информации.</p>
+
+        <p>7.2. Стороны обязуются принимать все разумные меры для защиты конфиденциальной информации друг друга, от
+            несанкционированного доступа третьих лиц, в том числе: осуществлять передачу конфиденциальной информации
+            исключительно по защищенным каналам связи; хранить конфиденциальную информацию исключительно в
+            предназначенных
+            для этого местах, исключающих доступ к ней третьих лиц; ограничивать доступ к конфиденциальной информации, в
+            том числе для сотрудников, не имеющих служебной необходимости в ознакомлении с данной информацией.</p>
+
+        <p>7.3. Стороны гарантируют полное соблюдение всех условий обработки, хранения и использования полученных от
+            другой стороны персональных данных, согласно ЗУ «О персональных данных» от 01.06.2010 № 2297-VI.</p>
+
+        <p>7.4. Стороны обязаны незамедлительно сообщить друг другу о допущенных ими либо ставшим им известным фактах
+            разглашения или угрозы разглашения, незаконном получении или незаконном использовании конфиденциальной
+            информации третьими лицами.</p>
+
+        <p>Стороны не вправе в одностороннем порядке прекращать охрану конфиденциальной информации, предусмотренной
+            настоящим Соглашением, в том числе в случае своей реорганизации или ликвидации в соответствии с гражданским
+            законодательством.</p>
+
+        <p>7.5. Под разглашением конфиденциальной информации в рамках настоящего Соглашения понимается действие или
+            бездействие одной из Сторон Соглашения, в результате которого конфиденциальная информация становится
+            известной
+            третьим лицам в отсутствие согласия на это владельца конфиденциальной информации. При этом форма разглашения
+            конфиденциальной информации третьим лицам (устная, письменная, с использованием технических средств и др.)
+            не
+            имеет значения. Не является нарушением конфиденциальности предоставление конфиденциальной информации по
+            законному требованию правоохранительных и иных уполномоченных государственных органов и должностных лиц в
+            случаях и в порядке, предусмотренных законодательством Украины.</p>
+
+        <p>7.6. В случае раскрытия конфиденциальной информации указанным органам и/или лицам Сторона, раскрывшая
+            конфиденциальную информацию, письменно уведомляет владельца конфиденциальной информации о факте
+            предоставления
+            такой информации, ее содержании и органе, которому предоставлена конфиденциальная информация, не позднее
+            двух
+            рабочих дней с момента раскрытия конфиденциальной информации.</p>
+
+        <p>7.7. В случае неисполнения Пользователем обязательств, предусмотренных настоящим разделом (Конфиденциальность
+            информации), он обязуется возместить причиненные убытки, в течение 5(пяти) рабочих дней после получения
+            соответствующего письменного требования пострадавшей Стороны.</p>
+
+        <h3>8. Иные положения</h3>
+        <p>8.1. Настоящее Соглашение представляет собой соглашение между Пользователем и Разработчиком относительно
+            порядка использования сервисов и заменяет собой все предыдущие соглашения между Пользователем и
+            Разработчиком.</p>
+
+        <p>8.2. Настоящее Соглашение регулируется и толкуется в соответствии с законодательством Украины. Вопросы, не
+            урегулированные настоящим Соглашением, подлежат разрешению в соответствии с законодательством Украины. Все
+            возможные споры, вытекающие из отношений, регулируемых настоящим Соглашением, разрешаются в порядке,
+            установленном действующим законодательством Украины по нормам украинского права.</p>
+
+        <p>8.3. Бездействие со стороны Разработчика в случае нарушения Пользователем либо иными пользователями положений
+            Соглашения не лишает Разработчика права предпринять соответствующие действия в защиту своих интересов
+            позднее,
+            а также не означает отказа Разработчика от своих прав в случае совершения в последующем подобных либо
+            сходных
+            нарушений.</p>
+
+        <p>8.4. Настоящее Соглашение составлен на русском языке и в некоторых случаях может быть предоставлен
+            Пользователю
+            для ознакомления на другом языке. В случае расхождения русскоязычной версии Соглашения и его версии на
+            другом
+            языке, применяются положения русскоязычной версии настоящего Соглашения.</p>
+
+        <div class="btn btn-success thanx">Спасибо, прочел</div>
+        <div class="close">Закрыть</div>
+    </div>
+    <div class="agreement eng">
+
+        <h2><span>Terms Of Use</span></h2>
+
+        By using this site, applications/extensions for e-commerce platform and/or a sizing technology through API in
+        any way you agree to and are bound by the terms and conditions set forth in this document. AstraFit reserves the
+        right, to modify, alter or otherwise update these terms from time to time. If you do not agree with any of the
+        below conditions, do not use this site.
+
+        <h3>PRIVACY</h3>
+
+        All information that AstraFit receives will be treated as confidential material and will only be used by
+        AstraFit and not passed on to others. If AstraFit informs a third party about the sizing technology all
+        information about users will be anonymous and it will not be possible to trace any individuals. The only
+        exception from the above is that AstraFit accumulates compounded data in order to predict future order sizes
+        better.
+
+        <h3>COPYRIGHT AND TRADEMARKS</h3>
+
+        The trademarks and logos displayed on this site are the property of AstraFit or other third parties.
+        Reproduction or distribution of content from this site, including, but not limited to images, photographs,
+        graphics, logos, illustrations or audio and video clips is prohibited without the prior written consent of
+        AstraFit. AstraFit and the AstraFit logo are trademarks of AstraFit. Other products, trademarks or brands
+        referred to from or on this website is copyright of their respective owners.
+
+        <h3>LIABILITY DISCLAIMER</h3>
+
+        The site, services and materials, are provided by AstraFit under these terms of use “as is” without warranty of
+        any kind, express or implied, including, but not limited to warranties of performance, merchantability and
+        fitness for a particular purpose.
+
+        AstraFit does not warrant that the functions contained in the materials will be uninterrupted or error-free,
+        that defects will be corrected, or that AstraFit or the server that makes them available are free of viruses or
+        other harmful components.
+
+        AstraFit does not warrant or make any representations regarding the use or the results of the use of the
+        materials in AstraFit’s web site in terms of their correctness, accuracy, reliability, or otherwise.
+
+        The use of the site, services or the downloading or other use of any materials takes place at your own
+        discretion and risk and with your agreement that you will be solely responsible for any damage to your computer
+        system, loss of data or other harm that results from such activities including any damages resulting from
+        computer viruses.
+        The material that you read in this site is provided solely for promotional purposes.
+
+        <h3>MODIFICATIONS TO SITE, SERVICE AND MATERIALS</h3>
+
+        AstraFit may at any time and from time to time modify or discontinue, temporarily or permanently, the site,
+        services, or materials, or any portion thereof, with or without notice. You agree that AstraFit shall not be
+        liable to you or any third party for any modification, suspension or discontinuance of the site, services, or
+        materials.
+
+        <h3>GENERAL</h3>
+
+        Any notice provided to AstraFit pursuant to the Terms should be sent to:
+        support@astrafit.com
+
+        <div class="btn btn-success thanx">Спасибо, прочел!</div>
+        <div class="close">Close</div>
+    </div>
+
+</div></div></div>
+    <div class="main-loader">
+        <i class="spinner-icon spinner-icon-large"></i>
+    </div>
+</div></div></div>
+
+    
+    <script src="/vendor/requirejs/require.min.js" data-main="/build/sizer/v1/scripts/init.js?rel=1443696684555"></script>
+
+
+    <!--
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-51716670-5', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script>
+        window.intercomSettings = { app_id: 'dtwcmk0b' };
+    </script>
+    <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/dtwcmk0b';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+    -->
+
+
+</body></html>

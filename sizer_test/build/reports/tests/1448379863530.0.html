@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" class="ui-window"><head>
+    <meta charset="utf-8" />
+    <title>AstraFit Sizer</title>
+    <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+    <link media="screen" href="/vendor/bootstrap/dist/css/bootstrap.min.css?rel=1430229545183" rel="stylesheet" />
+    <link media="screen" href="/build/assets/css/astrafit.css?rel=1448301835409" rel="stylesheet" />
+    <link media="screen" href="/build/assets/css/sizer.css?rel=1448301835410" rel="stylesheet" />
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="/build/sizer/v1/scripts/init.js?rel=1448301835409" src="/build/sizer/v1/scripts/init.js?rel=1448301835409"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="infrastructure" src="/build/sizer/v1/scripts/infrastructure.js"></script></head>
+<body>
+    <div class="general-container ui-rounded"><div class="main-container ui-sizer container ui-grow on"><div class="ui-on-no-cookie alert alert-warning text-center">Для оптимального пользования сервисом AstraFit активируйте в настройках браузера режим сохранения файлов cookie.</div>
+<div id="af-sizer" class="row af-sizer ui-processing">
+    <div role="navigation" class="navbar navbar-default navbar-static-top">
+        <div class="container">
+
+            <ul class="nav navbar-nav">
+
+                <li class="logo">
+                    <a class="goto-astrafit" target="_blank" href="http://astrafit.com">Astrafit</a>
+                </li>
+
+                <li class="chooseMenu"><a href="javascript:;">Подбор по фигуре</a></li>
+                <li class="tableMenu"><a href="javascript:;">Замеры изделия</a></li>
+
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:;">
+                        <i class="user-status"></i>
+                        <span class="name">Мой профиль</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul role="menu" class="dropdown-menu"><li class="login"><div class="field section">
+    <div class="sub-items pull-right">
+        <div class="btn btn-link changeParams">Изменить мои параметры</div>
+    </div>
+    <div class="language pull-left">
+        <a data-lang="ru_ru" class="active" href="javascript:;">ru</a>
+        <a data-lang="en_en" class="" href="javascript:;">en</a>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<h3>Вход</h3>
+
+<div class="field">
+	<input type="email" placeholder="Email" value="" class="form-control" />
+	<div class="error empty">укажите email</div>
+	<div class="error valid">Адрес электронной почты указан с ошибками</div>
+</div>
+<div class="field">
+	<input type="password" placeholder="Пароль" value="" class="form-control" />
+	<div class="error empty">укажите пароль</div>
+	<div class="error valid">Пароль слишком короткий</div>
+</div>
+
+<div class="field field-buttons">
+
+    <div class="btn-toolbar">
+        <div class="btn btn-success">ВОЙТИ</div>
+        <div class="btn btn-link register text-lowercase">регистрация</div>
+    </div>
+
+	<div class="error auth">Неверный email и/или пароль</div>
+	<div class="helper sub-items">
+        <a class="forgot" href="javascript:;">забыли пароль?</a>
+	</div>
+	<div class="errorServer">Извините, произошла ошибка. Попробуйте, пожалуйста, позже</div>
+	<div class="loader"><i class="spinner-icon spinner-icon-default"></i></div>
+</div></li></ul>
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="main-close close-window"><span class="ui-closable ui-fx-rotate">×</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="foto-small" class="foto-small" style="background-image: url(&quot;http://musthave.ua/static/uploads/cache/484x725/1107.jpg&quot;);"></div>
+
+    <div class="main-body">
+        <!-- insert content here -->
+    </div>
+    <div class="main-loader">
+        <i class="spinner-icon spinner-icon-large"></i>
+    </div>
+</div></div></div>
+
+    <script type="text/javascript" async="" src="https://widget.intercom.io/widget/dtwcmk0b"></script>
+    <script src="/vendor/svg.js/dist/svg.min.js"></script>
+    <script src="/vendor/requirejs/require.min.js" data-main="/build/sizer/v1/scripts/init.js?rel=1448301835409"></script>
+
+
+    <!--
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-51716670-5', 'auto');
+        ga('send', 'pageview');
+    </script>
+    -->
+    <script>
+        window.intercomSettings = { app_id: 'dtwcmk0b' };
+        (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/'+window.intercomSettings.app_id;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+    </script>
+
+
+</body></html>

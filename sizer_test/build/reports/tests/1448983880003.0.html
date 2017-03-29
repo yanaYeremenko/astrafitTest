@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+
+    <title>AstraFit Password Recovery</title>
+    <link media="screen" href="/css/recovery/fonts.css" rel="stylesheet" />
+    <link media="screen" href="/css/recovery/style.css" rel="stylesheet" />
+    
+    <script src="/js/recovery/underscore.min.js" type="text/javascript"></script>
+    <script src="/js/recovery/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="/js/recovery/main.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="main-container">
+  	<div class="login">
+	  	<div class="bubles">
+				<div class="bubles2">
+					<div class="container">
+						
+						<div class="logo"><img src="/img/recovery/logo.png" /></div>
+						<div class="content" style="display: none;">
+							<div class="title">Введите новый пароль</div>
+							<div class="form">
+								<input type="password" placeholder="Пароль" value="" class="password1" />
+								<input type="password" placeholder="Подтверждение пароля" value="" class="password2" />
+							</div>
+							<div class="error empty">Поля должны быть заполнены</div>
+							<div class="error password">Пароль слишком короткий</div>
+							<div class="error equals">Пароли не совпадают</div>
+							<div class="error server">Извините, произошла ошибка</div>
+							<div class="error email">Извините, но email должен быть указан</div>
+							<div class="error hash">Извините, но хеш-код должен быть указан</div>
+							<div class="success">Отлично! Пароль успешно изменен! <span></span></div>
+							<div class="loader"></div>
+							<div class="button">Сохранить <i class="icon-right"></i></div>
+						</div>
+						<div class="error total" style="display: block;">
+							Данная ссылка на восстановление пароля устарела.<br /> Пожалуйста, получите новую.
+						</div>
+						<div class="main-loader" style="display: none;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+</body></html>
